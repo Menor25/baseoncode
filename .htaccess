@@ -1,0 +1,16 @@
+# Turn Rewrite Engine On
+RewriteEngine on
+
+# Rewrite for all .php extension files
+RewriteRule ^home$ index.php [NC,L]
+RewriteRule ^country$ country.php [NC,L]
+RewriteRule ^course$ course.php [NC,L]
+RewriteRule ^about_us$ about_us.php [NC,L]
+RewriteRule ^login$ login.php [NC,L]
+RewriteRule ^register$ register.php [NC,L]
+RewriteRule ^welcome$ welcome.php [NC,L]
+RewriteRule ^payment$ payment.php [NC,L]
+RewriteRule ^payment_int$ payment_int.php [NC,L]
+RewriteRule ^contact_us$ contact_us.php [NC,L]
+RewriteRule ^terms$ terms.php [NC,L]
+RewriteRule ^privacy$ privacy.php [NC,L]
