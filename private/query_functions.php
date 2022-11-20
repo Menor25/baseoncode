@@ -6,7 +6,7 @@
 ?>
 <?php
 //Student registration
-function register($full_name, $email, $phone_number, $whatsapp_number, $country, $state, $city)
+function register($full_name, $email, $phone_number, $whatsapp_number, $country, $state, $city, $course)
  {
 
      global $conn;
@@ -20,13 +20,14 @@ function register($full_name, $email, $phone_number, $whatsapp_number, $country,
             $_SESSION['msg_type'] = "danger";}
     if(isset($whatsapp_number) && $whatsapp_number == ""){ $_SESSION[$Error] = "You did not enter your whatsapp number"; 
             $_SESSION['msg_type'] = "danger";}
-    if(isset($country) && $country == ""){ $_SESSION[$Error] = "You did not enter your country"; 
+    if(isset($country) && $country == ""){ $_SESSION[$Error] = "You did not select your country"; 
             $_SESSION['msg_type'] = "danger";}
     if(isset($state) && $state == ""){ $_SESSION[$Error] = "You did not enter your state"; 
             $_SESSION['msg_type'] = "danger";}
     if(isset($city) && $city == ""){ $_SESSION[$Error] = "You did not enter your city"; 
             $_SESSION['msg_type'] = "danger";}
-    
+    if(isset($course) && $course == ""){ $_SESSION[$Error] = "You did not select your course"; 
+            $_SESSION['msg_type'] = "danger";}
 
     //Check for valid input fields
     if(!preg_match("/^[a-zA-Z'. -]+$/", $full_name)){
@@ -74,8 +75,6 @@ function register($full_name, $email, $phone_number, $whatsapp_number, $country,
         return ($_SESSION[$Error]);
     }
 
-  
-
     if($Error == "")
     {
         $sql = "SELECT * FROM user_registration ";
@@ -89,23 +88,28 @@ function register($full_name, $email, $phone_number, $whatsapp_number, $country,
 
         if ($row > 0)
         {
-            $_SESSION[$Error] = "$full_name already exist";
-            $_SESSION['msg_type'] = "danger";
+            while($row = mysqli_fetch_assoc($result)){
+                $user_id = $row['id'];
+                $hashId = urlencode(base64_encode($user_id));
+            }
+                redirect_to("payment.php?i=$hashId");
+                exit();
         }else
         {
-
+            $randomPassword = rand();            
             $sql  = "INSERT INTO user_registration ";
-            $sql .= "(full_name, email, phone_number, whatsapp_number, country, state, city) ";
+            $sql .= "(full_name, email, phone_number, whatsapp_number, country, state, city, course, password) ";
             $sql .= "VALUES ('". $full_name ."', '". $email ."', '". $phone_number ."', '". $whatsapp_number ."', 
-                        '". $country ."', '". $state ."', '". $city ."')";
-                        echo $sql;
+                        '". $country ."', '". $state ."', '". $city ."', '". $course ."', '". $randomPassword ."')";
+            //echo $sql;
+                        
             $result = mysqli_query($conn, $sql);
             if($result)
             {
                 $new_id = mysqli_insert_id($conn);
                 $hashId = urlencode(base64_encode($new_id));
 
-                header("Location: payment.php?i=$hashId");
+                redirect_to("payment.php?i=$hashId");
                 // $_SESSION['new_id'] = $new_id;
 
                 // $_SESSION[$Error] = "Registration successfully!";

@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "system25$";
+$password = "";
 $dbname = "baseoncode";
 
 // Create connection

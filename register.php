@@ -1,22 +1,28 @@
 <?php 
-    session_start();
-    include "includes/header.php";
-    include "private/autoload.php";  
-
+    //session_start();
+    require_once "includes/header.php";
+    require_once "private/autoload.php";  
+    
     $Error = "";
+
+   $choosen_course = $_GET['course'];
+    if (empty($choosen_course)) {
+        header("Location: select-course");
+    }
 ?>
 
 <?php
     if(isset($_POST['register'])){
         register(
 
-            $full_name = trim($_POST['full_name']),
-            $email = trim($_POST['email']),
-            $phone_number = trim($_POST['phone_number']),
-            $whatsapp_number = trim($_POST['whatsapp_number']),
-            $country = trim($_POST['country']),
-            $state = trim($_POST['state']),
-            $city = trim($_POST['city'])
+            $full_name = trim(h($_POST['full_name'])),
+            $email = trim(h($_POST['email'])),
+            $phone_number = trim(($_POST['phone_number'])),
+            $whatsapp_number = trim(h($_POST['whatsapp_number'])),
+            $country = trim(h($_POST['country'])),
+            $state = trim(h($_POST['state'])),
+            $city = trim(h($_POST['city'])),
+            $course = $_POST['course']
 
         );
     }
@@ -75,7 +81,7 @@
                                         </div>
                                         <div id="billing-form" class="single-input mb-30">
                                             <label for="country">Country<span class="text-danger lead">*</span></label>
-                                            <select id="country" name="country" class="form-control">
+                                            <select id="country" name="country" class="form-control" required>
                                             <option value="<?php if(isset($country)){echo $country;} ?>"><?php if(isset($country)){echo $country;}else {echo "Select Country";} ?></option>
                                                 <option value="Afghanistan">Afghanistan</option>
                                                 <option value="Åland Islands">Åland Islands</option>
@@ -330,6 +336,10 @@
                                         <div class="single-input mb-30">
                                             <label for="city">City<span class="text-danger lead">*</span></label>
                                             <input type="text" id="city" name="city" placeholder="City" value="<?php if(isset($city)){echo $city;} ?>" required>
+                                        </div>
+                                        <div class="single-input mb-30">
+                                            <!-- <label for="city">Course<span class="text-danger lead">*</span></label> -->
+                                            <input type="hidden" value="<?= $choosen_course; ?>" name="course">
                                         </div>
                                         <div class="single-input">
                                             <button class="btn btn-primary btn-hover-secondary btn-width-100 lead" name="register">Proceed to payment</button>

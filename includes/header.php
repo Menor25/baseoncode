@@ -33,8 +33,8 @@
                         <div class="col-xl-3 col-auto">
                             <div class="header-logo">
                                 <a href="home">
-                                    <img class="dark-logo" src="assets/images/logo/baseoncode.JPEG" alt="Learts Logo">
-                                    <img class="light-logo" src="assets/images/logo/baseoncode.JPEG" alt="Learts Logo">
+                                    <img class="dark-logo" src="assets/images/logo/baseoncode.jpeg" alt="Learts Logo">
+                                    <img class="light-logo" src="assets/images/logo/baseoncode.jpeg" alt="Learts Logo">
                                 </a>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                             <nav class="site-main-menu">
                                 <ul>
                                     <li class="position-static">
-                                        <a href="course"><span class="menu-text">Join BaseOnCode</span></a>
+                                        <a href="select-course"><span class="menu-text">Join BaseOnCode</span></a>
                                     </li>
                                     <li class="position-static">
                                         <a href="about_us"><span class="menu-text">About Us</span></a>

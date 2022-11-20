@@ -18,10 +18,10 @@
                                     <p><a href="#">info@baseoncode.com </a></p>
                                 </div>
                                 <div class="footer-social-inline">
-                                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://whatsapp.com/dl/"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://twitter.com/DevMenor"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.youtube.com/@baseoncode"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://www.linkedin.com/company/83023180/admin/"><i class="fab fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>

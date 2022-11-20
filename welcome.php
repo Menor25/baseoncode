@@ -22,6 +22,7 @@
         $payment_message = $success['payment_message'];
         $ref_number = $success['ref_number'];
         $amount = $success['amount'];
+       
 
     }
     
@@ -61,8 +62,8 @@
                         <div class="col-xl-3 col-auto">
                             <div class="header-logo">
                                 <a href="home">
-                                    <img class="dark-logo" src="assets/images/logo/baseoncode.JPEG" alt="Learts Logo">
-                                    <img class="light-logo" src="assets/images/logo/baseoncode.JPEG" alt="Learts Logo">
+                                    <img class="dark-logo" src="assets/images/logo/baseoncode.jpeg" alt="Learts Logo">
+                                    <img class="light-logo" src="assets/images/logo/baseoncode.jpeg" alt="Learts Logo">
                                 </a>
                             </div>
                         </div>
@@ -152,8 +153,11 @@
                                     <h3 class="title">Registration Successful</h3>
                                     <p><span>Status: </span><?= $payment_message; ?></p>
                                     <p><span>Reference: </span><?= $ref_number; ?></p>
-                                    <p><span>Amount: </span><?= $amount; ?></p>
-                                    <p>An email has been sent to you with a receipt of the payment. Join the course telegram or whatsapp group by clicking the links below.</p>
+                                    <p><span>Amount: </span>&#x20A6;<?= $amount; ?></p>
+                                    <p>An email has been sent to you with a receipt of the payment.
+                                        You will recieve an email for us also for your username and password
+                                        to log into your learning dashboard.
+                                        Please join the course telegram or whatsapp group by clicking the links below.</p>
                                     <ul>
                                         <li><a href="https://chat.whatsapp.com/CWRhCnrzeFJLjq4PiI0aR6"><span><i class="fab fa-whatsapp"></i></span> Whatsapp Course Group</a></li>
                                         <li><a href="https://t.me/+i7-yARStooIyNzI0"><span><i class="fab fa-telegram"></i></span> Telegram Course Group</a></li>

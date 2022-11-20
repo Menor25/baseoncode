@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="page-banner-title">
-                            <h1 class="title">Grow strong in Web Development with the World's Best Programming Bootcamp.</h1>
+                            <h1 class="title">Grow strong, build your skill with the World's Best Tech Bootcamp.</h1>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                             <div class="section-title text-center mb-0" data-aos="fade-up">
                                 <span class="sub-title secondary-color max-mb-30">Get yourself a <strong>BaseOnCode</strong>  ID?</span>
                                 <h2 class="title heading-color max-mb-30">Take the step and register on BaseOnCode today<br> build the dream you have always wanted</h2>
-                                <a href="course" class="btn btn-primary btn-hover-secondary btn-width-300"> Get started now</a>
+                                <a href="select-course" class="btn btn-primary btn-hover-secondary btn-width-300"> Get started now</a>
                             </div>
                             <!-- Section Title End -->
                         </div>

@@ -11,7 +11,7 @@
             <div class="page-breadcrumb position-static">
                 <div class="container">
                     <ul class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home">Home</a></li>
                         <li class="current">Contact us</li>
                     </ul>
                 </div>
@@ -25,7 +25,7 @@
                 <div class="row margin-bottom-85">
                     <div class="col-12">
                         <div class="contact-title max-width-740">
-                            <h2 class="title">For more information, get in touch with BaseOnCode via contacts</h2>
+                            <h2 class="title">For more information, get in touch with BaseOnCode via the following</h2>
                         </div>
                     </div>
                 </div>

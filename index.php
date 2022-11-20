@@ -1,7 +1,6 @@
 <?php include "includes/header.php"; ?>
 
 
-
         <!-- Page Banner Slider Start -->
         <div class="page-banner-slider section">
             <div class="banner-slider swiper-container">
@@ -28,7 +27,7 @@
                                                 INSPIRING CURRICULUM
                                             </h3>
                                             <p>Learning with BaseOnCode will be a turning point in your life. You will be connected with a community of great talents that will awaken your talent.</p>
-                                            <a href="course" class="btn btn-primary btn-hover-secondary btn-width-300"> Get started now</a>
+                                            <a href="select-course" class="btn btn-primary btn-hover-secondary btn-width-300"> Get started now</a>
                                         </div>
                                         <!--Banner Slider Content end-->
 
@@ -59,7 +58,7 @@
                                                 mentorship
                                             </h3>
                                             <p>We have mentors that will guide you from day one of your journey into the community until your career dreams becomes a reality.</p>
-                                            <a href="course" class="btn btn-primary btn-hover-secondary btn-width-300"> Get started now</a>
+                                            <a href="select-course" class="btn btn-primary btn-hover-secondary btn-width-300"> Get started now</a>
                                         </div>
                                         <!--Banner Slider Content end-->
 
@@ -90,7 +89,7 @@
                                                 skill advancement
                                             </h3>
                                             <p>Not only your skills are advanced, your inner self can get a new identity as well. You're the one who take the full control of your tech story.</p>
-                                            <a href="course" class="btn btn-primary btn-hover-secondary btn-width-300"> Get started now</a>
+                                            <a href="select-course" class="btn btn-primary btn-hover-secondary btn-width-300"> Get started now</a>
                                         </div>
                                         <!--Banner Slider Content end-->
 
@@ -264,7 +263,7 @@
                             <div class="section-title text-center mb-0" data-aos="fade-up">
                                 <span class="sub-title secondary-color max-mb-30">Get yourself a <strong>BaseOnCode</strong>  ID?</span>
                                 <h2 class="title heading-color max-mb-30">Take the step and register on BaseOnCode today<br> build the dream you have always wanted</h2>
-                                <a href="course" class="btn btn-primary btn-hover-secondary btn-width-300"> Get started now</a>
+                                <a href="select-course" class="btn btn-primary btn-hover-secondary btn-width-300"> Get started now</a>
                             </div>
                             <!-- Section Title End -->
                         </div>
@@ -313,9 +312,9 @@
                             <span class="sub-title">Everything in <strong>BaseOnCode</strong></span>
                             <h2 class="title">We’re Here To <span>Transform</span> You!</h2>
                             <p>As learners, people can enjoy great companionship from BaseOnCode mentors and educators. We can help you develop and grow at your best. 
-                                The Bootcamp is designed to equip you with all the necessary skills to make you stand out in web devolopment.
+                                The Bootcamp is designed to equip you with all the necessary skills to make you stand out.
                             </p>
-                            <a href="course" class="btn btn-primary btn-hover-secondary"> Enrol Now</a>
+                            <a href="select-course" class="btn btn-primary btn-hover-secondary"> Enrol Now</a>
                         </div>
                     </div>
                 </div>
@@ -390,24 +389,44 @@
                             </div>
                             <!-- Static Testimonial End -->
                         </div>
-                        <!-- <div class="swiper-slide">
-                            
+                        <div class="swiper-slide" style="height: 420px;">
+                           
                             <div class="static-testimonial h5-testimonial mb-30">
                                 <div class="testimonial-image">
-                                    <img src="assets/images/testimonial/140/testimonial-avata-04.jpg" alt="">
+                                    <img src="assets/images/profile/ik.jpg" alt="">
                                 </div>
                                 <div class="testimonial-content">
-                                    <p>I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me. </p>
+                                    <p> Relationship Blogger | Content Writer | Public Speaker | Song Writer. </p>
+                                    <br><br>
                                 </div>
                                 <div class="author-info">
                                     <div class="cite">
-                                        <h6 class="name">Luvic Dubble</h6>
-                                        <span class="position">/ Private Tutor</span>
+                                        <h6 class="name">Ikechukwu Ani</h6>
+                                        <span class="position"> Content Creator </span>
                                     </div>
                                 </div>
                             </div>
                             
-                        </div> -->
+                        </div>
+                        <div class="swiper-slide" style="height: 420px;">
+                           
+                            <div class="static-testimonial h5-testimonial mb-30">
+                                <div class="testimonial-image">
+                                    <img src="assets/images/profile/cynthia.jpg" alt="">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p> Technical Content Writer| Virtual Assistant| Community Manager | Product Manager. </p>
+                                    <br>
+                                </div>
+                                <div class="author-info">
+                                    <div class="cite">
+                                        <h6 class="name">Osarumwense cynthia Udoh </h6>
+                                        <span class="position"> Virtual Assistant </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
