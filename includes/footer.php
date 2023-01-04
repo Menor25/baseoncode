@@ -120,7 +120,7 @@
         <div class="site-main-mobile-menu-inner">
             <div class="mobile-menu-header">
                 <div class="mobile-menu-logo">
-                    <a href="home"><img src="assets/images/logo/baseoncode.JPEG" alt="BaseOnCode"></a>
+                    <a href="home"><img src="assets/images/logo/baseoncode.jpeg" alt="BaseOnCode"></a>
                 </div>
                 <div class="mobile-menu-close">
                     <button class="toggle">
@@ -133,7 +133,7 @@
                 <nav class="site-mobile-menu">
                     <ul>
                         <li class="has-children position-static">
-                            <a href="course"><span class="menu-text">Join BaseOnCode</span></a>
+                            <a href="select-course"><span class="menu-text">Join BaseOnCode</span></a>
                         </li>
                         <li class="has-children position-static">
                             <a href="about_us"><span class="menu-text">About Us</span></a>
